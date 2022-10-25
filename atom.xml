@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://behappy0o0o0o0.github.io</id>
+    <title>姒师兄</title>
+    <updated>2022-10-25T16:06:31.416Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://behappy0o0o0o0.github.io"/>
+    <link rel="self" href="https://behappy0o0o0o0.github.io/atom.xml"/>
+    <subtitle>&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;
+&lt;/script&gt;
+
+总访问量&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次 ｜
+访客数&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人次 ｜
+单页访问量&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;次</subtitle>
+    <logo>https://behappy0o0o0o0.github.io/images/avatar.png</logo>
+    <icon>https://behappy0o0o0o0.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, 姒师兄</rights>
+    <entry>
+        <title type="html"><![CDATA[Python基础知识检查清单]]></title>
+        <id>https://behappy0o0o0o0.github.io/post/python-ji-chu-zhi-shi-jian-cha-qing-dan/</id>
+        <link href="https://behappy0o0o0o0.github.io/post/python-ji-chu-zhi-shi-jian-cha-qing-dan/">
+        </link>
+        <updated>2022-08-14T00:44:41.000Z</updated>
+        <content type="html"><![CDATA[<p><code>基础知识的范围是，python语法、基本数据类型、函数、类定义和使用，涉及一些原理性的知识点，会不断补充，争取能全方面的概括出以上内容，能提炼出的问题，用于检查或帮助python使用者、学习者更好的了解学习python。</code></p>
+<h2 id="基本语法">基本语法</h2>
+<p>基础语法包括变量定义，代码缩进，函数类的定义，自己回忆是否掌握牢记。</p>
+<h2 id="分支结构">分支结构</h2>
+<h3 id="if-elif-else">if-elif-else</h3>
+<p>分支判断的是布尔值，python里布尔值有哪些？</p>
+<h3 id="match-case">match-case</h3>
+<p>Q：什么情况下适合使用match语句？<br>
+A：当把一个值与多个常亮进行比较时，更适合使用match语句。<br>
+Q：match语句在那个python版本出现的？<br>
+A：3.10<br>
+Q：match语句中，如何在一个模式中，组合多个字面量？<br>
+A：使用 <code>|</code>，<code>case 401 | 403 | 404:</code><br>
+Q：match语句中<code>_</code>的作用是什么？<br>
+A：在match语句中，<code>_</code>被作为通配符使用，意味着<code>case _:</code>一定会匹配成功。<br>
+Q：如果case没有匹配成功，会出现什么情况？<br>
+A：没有匹配成功，将不会执行任何分支。<br>
+Q：match的特性有哪些？<br>
+A：</p>
+<h2 id="循环结构">循环结构</h2>
+<h3 id="for-in-else">for-in-else</h3>
+<p>Q：for循环接受什么变量，这种变量都拥有什么方法，才能够进行for循环。<br>
+A：<br>
+Q：for循环中定义的用来接收循环产生数据的变量，它的作用域是？<br>
+A：<br>
+Q：for循环的else子句在什么条件下执行？什么场景下可能用到for循环的else子句？else子句里的变量作用域是？<br>
+A：else子句在for循环中可迭代对象中的元素全部循环完毕时执行；<br>
+Q：for循环体内的变量作用域是？<br>
+A：<br>
+Q：for终止循环、跳出循环、跳过当次循环，怎么实现？<br>
+A：</p>
+<h3 id="while-else">while-else</h3>
+<p>Q：while的执行条件判断逻辑是？<br>
+A：<br>
+Q：while终止循环、跳出循环、跳过当次循环，怎么实现？<br>
+A：<br>
+Q：while语句的else子句在什么情况下执行？<br>
+A：当while循环的条件为假时。<br>
+Q：while循环体内的变量作用？<br>
+A：<br>
+Q：while循环的条件，他的变量作用域是？<br>
+A：<br>
+Q：while循环接受什么变量，这种变量都拥有什么方法，才能够进行while循环。<br>
+A：</p>
+<h3 id="pass">pass</h3>
+<p>Q：pass语句的作用是？<br>
+A：pass语句不执行任何操作，通常作为函数或条件子句的占位符来使用。</p>
+<h2 id="字符串">字符串</h2>
+<p>Q：python里字符串定义有几种方式，有什么需要注意的点？有什么区别？<br>
+A：可以通过''或&quot;&quot;定义单行字符串，''和&quot;&quot;必须成对出现，且在一个语句中，不能出现两对''或&quot;&quot;，使用''' '''或&quot;&quot;&quot; &quot;&quot;&quot;定义多行字符串，多行字符串会保留字符串的格式，比如换行符。python字符串末尾默认有换行符。还可以使用工厂函数，string()来定义字符串。<br>
+Q：拼接字符串的方法？有什么区别？<br>
+A：<code>+</code>运算符拼接，''.join()进行拼接；区别是join更快一些。<br>
+Q：字符串切片如何使用？<br>
+A：<code>string[切片开始位置，默认是0:切片结束为止，默认是字符串结尾]</code>，字符串切片是左闭右开，意思是包含开始位置，但不包含结束位置索引的字符串。<br>
+Q：字符串切片是浅拷贝还是深拷贝？<br>
+A：浅拷贝。<br>
+Q：字符串对象有哪些内置方法？<br>
+A：自己查看字符串对象的方法，有必要背诵下来。<br>
+Q：字符串支持那些运算符？<br>
+A：</p>
+<h2 id="列表">列表</h2>
+<p>Q：列表定义的方式有几种？<br>
+A：3种，<code>[]</code>定义或<code>list()</code>定义或列表推导式。<br>
+Q：列表的特点是什么？<br>
+A：列表的特点是可随意增减列表长度，可以把不同的对象保存在列表中。<br>
+Q：列表的底层数据结构是什么？<br>
+A：<br>
+Q：列表对象的方法有哪些？<br>
+A：有必要背下来。<br>
+Q：列表切片操作？<br>
+A：与字符串切片一样的规则。<br>
+Q：列表切片是浅拷贝还是深拷贝？有什么影响？<br>
+A：浅拷贝，浅拷贝相对于深拷贝节省内存空间。</p>
+<h2 id="元组">元组</h2>
+<p>Q：元组的定义方式有几种？<br>
+A：3种，<code>(),tuple(),元组推导式</code>，需要注意的是，如果元组种，只有一个元素，需要在那一个元素追加逗号。<br>
+Q：元组与列表有什么不同？<br>
+A：元组是不可变类型，所以不能直接修改元组内的元素。其他与列表相似。<br>
+Q：元组的值真的不能修改么？<br>
+A：一维元组的值，不可以修改。二维元组种，如果元素是列表，那么可以更改列表中的值，但不能更改列表这个元素的类型。</p>
+<h2 id="字典">字典</h2>
+<p>Q：字典的定义方式有几种？<br>
+A：3种，<code>{}</code>或<code>dict()</code>或字典推导式<br>
+Q：字典取值有几种方式？如果视图取一个不存在的值会怎样？<br>
+A：<code>dict[key]</code>或dict.get(key)；dict[key]如果key不存在会抛出<code>KeyError</code>,dict.get(key)如果不存在，会返回一个None。<br>
+Q：修改字典内容的方法？<br>
+A：<br>
+Q：字典中的键值对顺序是固定的么？<br>
+A：<br>
+Q：字典对象的方法有哪些？<br>
+A：有必要背下来。<br>
+Q：字典对象参与循环，需要用到什么方法？<br>
+A：<code>dict.keys(), dict.values(),dicr.items()</code></p>
+<h3 id="函数">函数</h3>
+<p>Q：函数定义的关键字是什么？<br>
+A：<code>def</code><br>
+Q：相比面向过程编程，使用函数有什么作用？<br>
+A：使用函数可以解决代码重复的问题，把相同功能的代码使用函数定义，提高了代码可读性和美观度。<br>
+Q：函数的参数类型有哪些？当它们同时出现时，对顺序有什么要求？<br>
+A：函数的参数类型有，关键字参数，位置参数、<em>args、**kwargs；当它们同时出现时，位置参数必须最先定义，之后是关键字参数，最后是任意位置参数</em>args和任意关键字参数<strong>kwargs。<br>
+Q：*args和</strong>kwargs如何取值？<br>
+A：<br>
+Q：函数内如何定义全局变量？<br>
+A：使用global关键字定义。<br>
+Q：函数没有定义返回值时，返回值是什么？<br>
+A：<br>
+Q：函数使用return语句，但没有指定return的内容，这时，返回的内容是什么？<br>
+A：<br>
+Q：如何导入一个函数？有几种方式？如果导入的函数在当前py文件存在同名函数，会怎么样？ 如何解决？<br>
+A：使用<code>from 模块名 import 函数名</code>或<code>import 模块名</code>，第一种方式只会导入指定的函数，第二种方式会把模块中的<code>所有</code>函数和属性导入；如果存在同名函数，且在同名函数定义后调用，执行时将调用本地同名函数，反之，在定义之前调用，则执行导入的同名函数；可以使用<code>as</code>在导入时，给同名函数重命名，避免这个问题。<br>
+Q：函数在调用时，如果没有传递足够的参数，会发生什么？<br>
+A：抛出异常，TypeError。</p>
+<h2 id="类">类</h2>
+<p>Q：类是如何定义的？<br>
+A：使用class关键字，后面跟类名和在圆括号中类参数，之后加上:号，以及类的代码体。<br>
+Q：object是所有类的基类么？<br>
+A：在Python3中，object是所有类的基类。<br>
+Q：什么是经典类，什么是新事类？<br>
+A：新式类默认继承object，子类可以调用基类的方法；经典类是没有继承的类，所有类型都为type类型。<br>
+Q：多继承情况下哎，类的继承顺序，遵守什么原则？<br>
+A：类的继承顺序，当类为经典类时，深度优先，当为新式类时，广度优先。<br>
+Q：多继承情况下哎，方法解析顺序？<br>
+A：在类的多继承情况下，方法解析顺序，遵守c3方法。<br>
+Q：如何实例化一个类？<br>
+A：<br>
+Q：类的实例化过程，尽量讲清楚。<br>
+A：<br>
+Q：类属性如何定义？<br>
+A：<br>
+Q：类方法如何定义？<br>
+A：<br>
+Q：类方法和实例化方法有那些区别？<br>
+A：<br>
+Q：多个类实例指向的类方法是同一个么？<br>
+A：<br>
+Q：如何调用父类的方法？<br>
+A：<br>
+Q：如何设置私有的类属性？<br>
+A：<br>
+Q：如何设置私有的实例化属性？<br>
+A：<br>
+Q：类中的静态方法如何定义？<br>
+A：<br>
+Q：类方法如何定义？<br>
+A：</p>
+<h2 id="面向对象">面向对象</h2>
+<p>Q：什么是类的封装？有什么作用？<br>
+A：<br>
+Q：什么是类的继承？有什么作用？<br>
+A：<br>
+Q 什么是类的多态？如何实现？有什么作用？<br>
+A：<br>
+Q：类中有哪些魔法方法？<br>
+A：</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[family 项目进展]]></title>
+        <id>https://behappy0o0o0o0.github.io/post/family-xiang-mu-jin-zhan/</id>
+        <link href="https://behappy0o0o0o0.github.io/post/family-xiang-mu-jin-zhan/">
+        </link>
+        <updated>2022-08-12T11:53:26.000Z</updated>
+        <content type="html"><![CDATA[<p>family<br>
+为了生活更美好！<br>
+连接家和家人的智能平台，包括智能家居控制、适用于家庭的应用、能够生活的更好的辅助工具等等。</p>
+<h2 id="开发计划">开发计划</h2>
+<ul>
+<li>family网页端</li>
+<li>智能家居平台与family平台进行api集成</li>
+<li>family应用开发&amp;集成</li>
+<li>family安卓、ios端</li>
+<li>老人、孩子主题应用</li>
+<li>更多主题文件开发</li>
+</ul>
+<h2 id="进行中">进行中</h2>
+<h3 id="family平台">family平台</h3>
+<ul>
+<li>平台功能规划</li>
+</ul>
+<p>end。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Django学习索引]]></title>
+        <id>https://behappy0o0o0o0.github.io/post/django-xue-xi-mu-lu-suo-yin/</id>
+        <link href="https://behappy0o0o0o0.github.io/post/django-xue-xi-mu-lu-suo-yin/">
+        </link>
+        <updated>2022-08-12T11:31:08.000Z</updated>
+        <content type="html"><![CDATA[<p><code>本索引中的文章基于django4.1版本。</code></p>
+<h2 id="索引">索引</h2>
+<ul>
+<li>视图</li>
+<li>urls</li>
+<li>模版</li>
+<li>models</li>
+<li>orm</li>
+<li>from表单</li>
+<li>admin</li>
+<li>settings</li>
+<li>中间件</li>
+<li>文件管理</li>
+<li>Session</li>
+<li>用户认证</li>
+<li>文件上传</li>
+<li>静态文件查找器</li>
+<li>自动化测试</li>
+</ul>
+]]></content>
+    </entry>
+</feed>

@@ -1,0 +1,365 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Python基础知识检查清单 | 姒师兄</title>
+
+<link rel="shortcut icon" href="https://behappy0o0o0o0.github.io/favicon.ico?v=1666713988051">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://behappy0o0o0o0.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            姒师兄
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1666713988051" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    Python基础知识检查清单
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2022-08-14 ·
+                    </time>
+                    
+                        <a href="https://behappy0o0o0o0.github.io/tag/C3uPIsOzc/" class="post-tags">
+                            # Python
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p><code>基础知识的范围是，python语法、基本数据类型、函数、类定义和使用，涉及一些原理性的知识点，会不断补充，争取能全方面的概括出以上内容，能提炼出的问题，用于检查或帮助python使用者、学习者更好的了解学习python。</code></p>
+<h2 id="基本语法">基本语法</h2>
+<p>基础语法包括变量定义，代码缩进，函数类的定义，自己回忆是否掌握牢记。</p>
+<h2 id="分支结构">分支结构</h2>
+<h3 id="if-elif-else">if-elif-else</h3>
+<p>分支判断的是布尔值，python里布尔值有哪些？</p>
+<h3 id="match-case">match-case</h3>
+<p>Q：什么情况下适合使用match语句？<br>
+A：当把一个值与多个常亮进行比较时，更适合使用match语句。<br>
+Q：match语句在那个python版本出现的？<br>
+A：3.10<br>
+Q：match语句中，如何在一个模式中，组合多个字面量？<br>
+A：使用 <code>|</code>，<code>case 401 | 403 | 404:</code><br>
+Q：match语句中<code>_</code>的作用是什么？<br>
+A：在match语句中，<code>_</code>被作为通配符使用，意味着<code>case _:</code>一定会匹配成功。<br>
+Q：如果case没有匹配成功，会出现什么情况？<br>
+A：没有匹配成功，将不会执行任何分支。<br>
+Q：match的特性有哪些？<br>
+A：</p>
+<h2 id="循环结构">循环结构</h2>
+<h3 id="for-in-else">for-in-else</h3>
+<p>Q：for循环接受什么变量，这种变量都拥有什么方法，才能够进行for循环。<br>
+A：<br>
+Q：for循环中定义的用来接收循环产生数据的变量，它的作用域是？<br>
+A：<br>
+Q：for循环的else子句在什么条件下执行？什么场景下可能用到for循环的else子句？else子句里的变量作用域是？<br>
+A：else子句在for循环中可迭代对象中的元素全部循环完毕时执行；<br>
+Q：for循环体内的变量作用域是？<br>
+A：<br>
+Q：for终止循环、跳出循环、跳过当次循环，怎么实现？<br>
+A：</p>
+<h3 id="while-else">while-else</h3>
+<p>Q：while的执行条件判断逻辑是？<br>
+A：<br>
+Q：while终止循环、跳出循环、跳过当次循环，怎么实现？<br>
+A：<br>
+Q：while语句的else子句在什么情况下执行？<br>
+A：当while循环的条件为假时。<br>
+Q：while循环体内的变量作用？<br>
+A：<br>
+Q：while循环的条件，他的变量作用域是？<br>
+A：<br>
+Q：while循环接受什么变量，这种变量都拥有什么方法，才能够进行while循环。<br>
+A：</p>
+<h3 id="pass">pass</h3>
+<p>Q：pass语句的作用是？<br>
+A：pass语句不执行任何操作，通常作为函数或条件子句的占位符来使用。</p>
+<h2 id="字符串">字符串</h2>
+<p>Q：python里字符串定义有几种方式，有什么需要注意的点？有什么区别？<br>
+A：可以通过''或&quot;&quot;定义单行字符串，''和&quot;&quot;必须成对出现，且在一个语句中，不能出现两对''或&quot;&quot;，使用''' '''或&quot;&quot;&quot; &quot;&quot;&quot;定义多行字符串，多行字符串会保留字符串的格式，比如换行符。python字符串末尾默认有换行符。还可以使用工厂函数，string()来定义字符串。<br>
+Q：拼接字符串的方法？有什么区别？<br>
+A：<code>+</code>运算符拼接，''.join()进行拼接；区别是join更快一些。<br>
+Q：字符串切片如何使用？<br>
+A：<code>string[切片开始位置，默认是0:切片结束为止，默认是字符串结尾]</code>，字符串切片是左闭右开，意思是包含开始位置，但不包含结束位置索引的字符串。<br>
+Q：字符串切片是浅拷贝还是深拷贝？<br>
+A：浅拷贝。<br>
+Q：字符串对象有哪些内置方法？<br>
+A：自己查看字符串对象的方法，有必要背诵下来。<br>
+Q：字符串支持那些运算符？<br>
+A：</p>
+<h2 id="列表">列表</h2>
+<p>Q：列表定义的方式有几种？<br>
+A：3种，<code>[]</code>定义或<code>list()</code>定义或列表推导式。<br>
+Q：列表的特点是什么？<br>
+A：列表的特点是可随意增减列表长度，可以把不同的对象保存在列表中。<br>
+Q：列表的底层数据结构是什么？<br>
+A：<br>
+Q：列表对象的方法有哪些？<br>
+A：有必要背下来。<br>
+Q：列表切片操作？<br>
+A：与字符串切片一样的规则。<br>
+Q：列表切片是浅拷贝还是深拷贝？有什么影响？<br>
+A：浅拷贝，浅拷贝相对于深拷贝节省内存空间。</p>
+<h2 id="元组">元组</h2>
+<p>Q：元组的定义方式有几种？<br>
+A：3种，<code>(),tuple(),元组推导式</code>，需要注意的是，如果元组种，只有一个元素，需要在那一个元素追加逗号。<br>
+Q：元组与列表有什么不同？<br>
+A：元组是不可变类型，所以不能直接修改元组内的元素。其他与列表相似。<br>
+Q：元组的值真的不能修改么？<br>
+A：一维元组的值，不可以修改。二维元组种，如果元素是列表，那么可以更改列表中的值，但不能更改列表这个元素的类型。</p>
+<h2 id="字典">字典</h2>
+<p>Q：字典的定义方式有几种？<br>
+A：3种，<code>{}</code>或<code>dict()</code>或字典推导式<br>
+Q：字典取值有几种方式？如果视图取一个不存在的值会怎样？<br>
+A：<code>dict[key]</code>或dict.get(key)；dict[key]如果key不存在会抛出<code>KeyError</code>,dict.get(key)如果不存在，会返回一个None。<br>
+Q：修改字典内容的方法？<br>
+A：<br>
+Q：字典中的键值对顺序是固定的么？<br>
+A：<br>
+Q：字典对象的方法有哪些？<br>
+A：有必要背下来。<br>
+Q：字典对象参与循环，需要用到什么方法？<br>
+A：<code>dict.keys(), dict.values(),dicr.items()</code></p>
+<h3 id="函数">函数</h3>
+<p>Q：函数定义的关键字是什么？<br>
+A：<code>def</code><br>
+Q：相比面向过程编程，使用函数有什么作用？<br>
+A：使用函数可以解决代码重复的问题，把相同功能的代码使用函数定义，提高了代码可读性和美观度。<br>
+Q：函数的参数类型有哪些？当它们同时出现时，对顺序有什么要求？<br>
+A：函数的参数类型有，关键字参数，位置参数、<em>args、**kwargs；当它们同时出现时，位置参数必须最先定义，之后是关键字参数，最后是任意位置参数</em>args和任意关键字参数<strong>kwargs。<br>
+Q：*args和</strong>kwargs如何取值？<br>
+A：<br>
+Q：函数内如何定义全局变量？<br>
+A：使用global关键字定义。<br>
+Q：函数没有定义返回值时，返回值是什么？<br>
+A：<br>
+Q：函数使用return语句，但没有指定return的内容，这时，返回的内容是什么？<br>
+A：<br>
+Q：如何导入一个函数？有几种方式？如果导入的函数在当前py文件存在同名函数，会怎么样？ 如何解决？<br>
+A：使用<code>from 模块名 import 函数名</code>或<code>import 模块名</code>，第一种方式只会导入指定的函数，第二种方式会把模块中的<code>所有</code>函数和属性导入；如果存在同名函数，且在同名函数定义后调用，执行时将调用本地同名函数，反之，在定义之前调用，则执行导入的同名函数；可以使用<code>as</code>在导入时，给同名函数重命名，避免这个问题。<br>
+Q：函数在调用时，如果没有传递足够的参数，会发生什么？<br>
+A：抛出异常，TypeError。</p>
+<h2 id="类">类</h2>
+<p>Q：类是如何定义的？<br>
+A：使用class关键字，后面跟类名和在圆括号中类参数，之后加上:号，以及类的代码体。<br>
+Q：object是所有类的基类么？<br>
+A：在Python3中，object是所有类的基类。<br>
+Q：什么是经典类，什么是新事类？<br>
+A：新式类默认继承object，子类可以调用基类的方法；经典类是没有继承的类，所有类型都为type类型。<br>
+Q：多继承情况下哎，类的继承顺序，遵守什么原则？<br>
+A：类的继承顺序，当类为经典类时，深度优先，当为新式类时，广度优先。<br>
+Q：多继承情况下哎，方法解析顺序？<br>
+A：在类的多继承情况下，方法解析顺序，遵守c3方法。<br>
+Q：如何实例化一个类？<br>
+A：<br>
+Q：类的实例化过程，尽量讲清楚。<br>
+A：<br>
+Q：类属性如何定义？<br>
+A：<br>
+Q：类方法如何定义？<br>
+A：<br>
+Q：类方法和实例化方法有那些区别？<br>
+A：<br>
+Q：多个类实例指向的类方法是同一个么？<br>
+A：<br>
+Q：如何调用父类的方法？<br>
+A：<br>
+Q：如何设置私有的类属性？<br>
+A：<br>
+Q：如何设置私有的实例化属性？<br>
+A：<br>
+Q：类中的静态方法如何定义？<br>
+A：<br>
+Q：类方法如何定义？<br>
+A：</p>
+<h2 id="面向对象">面向对象</h2>
+<p>Q：什么是类的封装？有什么作用？<br>
+A：<br>
+Q：什么是类的继承？有什么作用？<br>
+A：<br>
+Q 什么是类的多态？如何实现？有什么作用？<br>
+A：<br>
+Q：类中有哪些魔法方法？<br>
+A：</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://behappy0o0o0o0.github.io/post/family-xiang-mu-jin-zhan/" class="post-title gt-a-link">
+                    family 项目进展
+                </a>
+            </div>
+        
+
+        
+
+        
+            
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script>
+    // md5.min.js
+    !function(n){
+        "use strict";
+        function d(n,t){var r=(65535&n)+(65535&t);return(n>>16)+(t>>16)+(r>>16)<<16|65535&r}
+        function f(n,t,r,e,o,u){return d((c=d(d(t,n),d(e,u)))<<(f=o)|c>>>32-f,r);var c,f}
+        function l(n,t,r,e,o,u,c){return f(t&r|~t&e,n,t,o,u,c)}
+        function v(n,t,r,e,o,u,c){return f(t&e|r&~e,n,t,o,u,c)}
+        function g(n,t,r,e,o,u,c){return f(t^r^e,n,t,o,u,c)}
+        function m(n,t,r,e,o,u,c){return f(r^(t|~e),n,t,o,u,c)}
+        function i(n,t){var r,e,o,u,c;n[t>>5]|=128<<t%32,n[14+(t+64>>>9<<4)]=t;var f=1732584193,i=-271733879,a=-1732584194,h=271733878;for(r=0;r<n.length;r+=16)f=l(e=f,o=i,u=a,c=h,n[r],7,-680876936),h=l(h,f,i,a,n[r+1],12,-389564586),a=l(a,h,f,i,n[r+2],17,606105819),i=l(i,a,h,f,n[r+3],22,-1044525330),f=l(f,i,a,h,n[r+4],7,-176418897),h=l(h,f,i,a,n[r+5],12,1200080426),a=l(a,h,f,i,n[r+6],17,-1473231341),i=l(i,a,h,f,n[r+7],22,-45705983),f=l(f,i,a,h,n[r+8],7,1770035416),h=l(h,f,i,a,n[r+9],12,-1958414417),a=l(a,h,f,i,n[r+10],17,-42063),i=l(i,a,h,f,n[r+11],22,-1990404162),f=l(f,i,a,h,n[r+12],7,1804603682),h=l(h,f,i,a,n[r+13],12,-40341101),a=l(a,h,f,i,n[r+14],17,-1502002290),f=v(f,i=l(i,a,h,f,n[r+15],22,1236535329),a,h,n[r+1],5,-165796510),h=v(h,f,i,a,n[r+6],9,-1069501632),a=v(a,h,f,i,n[r+11],14,643717713),i=v(i,a,h,f,n[r],20,-373897302),f=v(f,i,a,h,n[r+5],5,-701558691),h=v(h,f,i,a,n[r+10],9,38016083),a=v(a,h,f,i,n[r+15],14,-660478335),i=v(i,a,h,f,n[r+4],20,-405537848),f=v(f,i,a,h,n[r+9],5,568446438),h=v(h,f,i,a,n[r+14],9,-1019803690),a=v(a,h,f,i,n[r+3],14,-187363961),i=v(i,a,h,f,n[r+8],20,1163531501),f=v(f,i,a,h,n[r+13],5,-1444681467),h=v(h,f,i,a,n[r+2],9,-51403784),a=v(a,h,f,i,n[r+7],14,1735328473),f=g(f,i=v(i,a,h,f,n[r+12],20,-1926607734),a,h,n[r+5],4,-378558),h=g(h,f,i,a,n[r+8],11,-2022574463),a=g(a,h,f,i,n[r+11],16,1839030562),i=g(i,a,h,f,n[r+14],23,-35309556),f=g(f,i,a,h,n[r+1],4,-1530992060),h=g(h,f,i,a,n[r+4],11,1272893353),a=g(a,h,f,i,n[r+7],16,-155497632),i=g(i,a,h,f,n[r+10],23,-1094730640),f=g(f,i,a,h,n[r+13],4,681279174),h=g(h,f,i,a,n[r],11,-358537222),a=g(a,h,f,i,n[r+3],16,-722521979),i=g(i,a,h,f,n[r+6],23,76029189),f=g(f,i,a,h,n[r+9],4,-640364487),h=g(h,f,i,a,n[r+12],11,-421815835),a=g(a,h,f,i,n[r+15],16,530742520),f=m(f,i=g(i,a,h,f,n[r+2],23,-995338651),a,h,n[r],6,-198630844),h=m(h,f,i,a,n[r+7],10,1126891415),a=m(a,h,f,i,n[r+14],15,-1416354905),i=m(i,a,h,f,n[r+5],21,-57434055),f=m(f,i,a,h,n[r+12],6,1700485571),h=m(h,f,i,a,n[r+3],10,-1894986606),a=m(a,h,f,i,n[r+10],15,-1051523),i=m(i,a,h,f,n[r+1],21,-2054922799),f=m(f,i,a,h,n[r+8],6,1873313359),h=m(h,f,i,a,n[r+15],10,-30611744),a=m(a,h,f,i,n[r+6],15,-1560198380),i=m(i,a,h,f,n[r+13],21,1309151649),f=m(f,i,a,h,n[r+4],6,-145523070),h=m(h,f,i,a,n[r+11],10,-1120210379),a=m(a,h,f,i,n[r+2],15,718787259),i=m(i,a,h,f,n[r+9],21,-343485551),f=d(f,e),i=d(i,o),a=d(a,u),h=d(h,c);return[f,i,a,h]}
+        function a(n){var t,r="",e=32*n.length;for(t=0;t<e;t+=8)r+=String.fromCharCode(n[t>>5]>>>t%32&255);return r}
+        function h(n){var t,r=[];for(r[(n.length>>2)-1]=void 0,t=0;t<r.length;t+=1)r[t]=0;var e=8*n.length;for(t=0;t<e;t+=8)r[t>>5]|=(255&n.charCodeAt(t/8))<<t%32;return r}
+        function e(n){var t,r,e="0123456789abcdef",o="";for(r=0;r<n.length;r+=1)t=n.charCodeAt(r),o+=e.charAt(t>>>4&15)+e.charAt(15&t);return o}
+        function r(n){return unescape(encodeURIComponent(n))}
+        function o(n){return a(i(h(t=r(n)),8*t.length));var t}
+        function u(n,t){return function(n,t){var r,e,o=h(n),u=[],c=[];for(u[15]=c[15]=void 0,16<o.length&&(o=i(o,8*n.length)),r=0;r<16;r+=1)u[r]=909522486^o[r],c[r]=1549556828^o[r];return e=i(u.concat(h(t)),512+8*t.length),a(i(c.concat(e),640))}(r(n),r(t))}
+        function t(n,t,r){return t?r?u(t,n):e(u(t,n)):r?o(n):e(o(n))}
+        "function"==typeof define&&define.amd?define(function(){return t}):"object"==typeof module&&module.exports?module.exports=t:n.md5=t;
+    }(this);
+</script>
+
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'b15d49e37660c2698a52',
+    clientSecret: 'd86b8c08324f5d8fe73bbb3ba71349f0d986245b',
+    repo: 'gitalk-comment',
+    owner: 'BeHappy0o0o0o0',
+    admin: ['BeHappy0o0o0o0'],
+    id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false       // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+            
+
+            
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+总访问量<span id="busuanzi_value_site_pv"></span>次 ｜
+访客数<span id="busuanzi_value_site_uv"></span>人次 ｜
+单页访问量<span id="busuanzi_value_page_pv"></span>次</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://behappy0o0o0o0.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
